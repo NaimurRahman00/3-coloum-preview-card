@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lexend+Deca:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@300;400;700&family=Lexend+Deca:wght@300;400&display=swap');
+:root {
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgroundHeadingsButtons: hsl(0, 0%, 95%);
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--backgroundHeadingsButtons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    max-width: 920px;
+    height: 500px;
+    display: flex;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    animation: fromleft 1s;
+    -webkit-animation: fromleft 1s;
+}
+main div {
+    padding: 45px;
+}
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--backgroundHeadingsButtons);
+    padding-top: 35px;
+}
+p {
+    font-size: 15px;
+    margin-top: 30px;
+    color: var(--paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 25px;
+}
+button {
+    margin-top: 80px;
+    width: 145px;
+    height: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: var(--backgroundHeadingsButtons);
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    cursor: pointer;
+}
+button:hover {
+    border: 3px solid var(--backgroundHeadingsButtons);
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--backgroundHeadingsButtons) !important;
+}
+
+/* First Card */
+
+main>div:first-child {
+    background-color: var(--brightOrange);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+}
+main>div:first-child::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: rgb(40, 40, 40);
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+main>div:first-child:hover {
+    background-color: hsl(31, 78%, 45%);
+}
+main>div:first-child:hover::before {
+    width: 100%;
+}
+main>div:first-child button { 
+    color: var(--brightOrange);
+}
+
+/* Second Card */
+
+main>div:nth-child(2) {
+    background-color: var(--darkCyan);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+}
+main>div:nth-child(2):hover {
+    background-color: hsl(184, 98%, 19%);
+}
+main>div:nth-child(2):before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: rgb(24, 24, 24);
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+main>div:nth-child(2):hover::before {
+    width: 100%;
+}
+main>div:nth-child(2) button { 
+    color: var(--darkCyan);
+}
+
+/* Third Card */
+
+main>div:last-child {
+    background-color: var(--veryDarkCyan);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+}
+main>div:last-child::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+main>div:last-child:hover::before {
+    width: 100%;
+}
+main>div:last-child:hover {
+    background-color: hsl(179, 100%, 11%);
+}
+main>div:last-child button {
+    color: var(--veryDarkCyan);
+}
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 5px;
+    font-size: 11px;
+    text-align: center;
+    animation: fromleft 5s ;
+    -webkit-animation: fromleft 5s ;
+}
+.attribution a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1rem;
+    color: hsl(0, 2%, 10%);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.attribution a:hover {
+    color: var(--brightOrange);
+}
+
+/* Responsive part */
+
+@media only screen and (max-width: 950px) {
+    body {
+        height: auto;
+        margin-top: 30px;
+    }
+    main {
+      flex-direction: column;
+      height: 1325px;
+      max-width: 325px;
+    }
+    main>div {
+        max-height: 440px;
+    }
+    button {
+    margin-top: 25px;
+    }
+    .attribution {
+        display: none;
+    }
+}
+
+/* Animation sec */
+
+@keyframes fromleft {
+    from {
+        opacity: 0;
+        transform: scale(.1);
+        -webkit-transform: scale(.1);
+        -moz-transform: scale(.1);
+        -ms-transform: scale(.1);
+        -o-transform: scale(.1);
+}
+    to {
+        opacity: 1;
+    }
+}
