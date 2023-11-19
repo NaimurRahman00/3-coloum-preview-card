@@ -210,7 +210,7 @@ main>div:last-child button {
 @media only screen and (max-width: 950px) {
     body {
         height: auto;
-        margin-top: 30px;
+        padding: 30px;
     }
     main {
       flex-direction: column;
@@ -225,6 +225,14 @@ main>div:last-child button {
     }
     .attribution {
         display: none;
+    }
+    main>div:last-child {
+        border-radius:0 0 10px 10px;
+        -webkit-border-radius:0 0 10px 10px;
+        -moz-border-radius:0 0 10px 10px;
+        -ms-border-radius:0 0 10px 10px;
+        -o-border-radius:0 0 10px 10px;
+        overflow: hidden;
     }
 }
 
